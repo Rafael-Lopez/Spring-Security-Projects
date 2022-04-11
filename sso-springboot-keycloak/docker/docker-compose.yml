@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  keycloak:
+    image: jboss/keycloak:16.1.1
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - KEYCLOAK_IMPORT=/opt/jboss/keycloak/imports/realm-export.json
+      - DB_VENDOR=h2
+    ports:
+      - '8089:8080'
+    volumes:
+      - ./keycloak/imports:/opt/jboss/keycloak/imports
+  mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_DATABASE=university
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
