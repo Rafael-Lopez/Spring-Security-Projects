@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "f78c6d7c-75aa-40d2-a675-5bd0a4ea8675",
+		"name": "Authentication Samples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic Authentication",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "pass",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jwt Authentication",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTgxNjIzOTAyMn0.5Ex4Dq_SGExXgd1y39M3bduNhnp-AREgTvQ2BzscNtLiVioDCDTWehTOgYXTMIdhBv7FxVbNYoCZffHU_fQ1pUYmpnRKYVERAyisA6aK2ElCGOSaS5fAOOII_TLmjiuIW5x_mcDN-8QYuHZmnj_kuoHCM7MSU-INwFhsPhgQmox4hqGtNiGTrg1JrYEJF-b15VB2c32X4p7Si-PxhOS98pzPqjM2zo8IIvDk03fIPhx7IV-ZBiJMTI-tkLkzKDQzHlHY4_Y8wncbTRwTJSHA-sJqXLmpqcrGwrN6cKilYCDmDxb5So7JP3ex94pPyfZI7mUiQKct3D4sEVRxHhNRppz1NIlEPI3ocCJffikHCiJLJtjQ2ThQ3tof3fggCE0N849OPn9Wx7A0G6Bq0BdNtjzrsTEIJ2Kslrhkuud-B1BvL5ozcVPtjaSNQEuDTrSF-ajRTtkpANLGzO2GkIt63odOW7hYlSq-8grG1GzBAhd9KEO1LSkKG1N3DMrdmtJvPs9GiaAkk8xBbQhXKPb5gmEN5xU7OKEDNCxDJpynoYcJ2Y__pNMyj9ru6-2B3vHgudxFoO8oUoNepu2cy9eiXZjc5vBUClK6H1V3OWMZXBLgHmj1q1Z-vsHvhvkSBL0Km1AffZNnXHhiVC94EarjJFt8xldx35DFSARGvgNV23I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
