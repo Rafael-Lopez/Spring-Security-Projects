@@ -1,0 +1,20 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          key-value: >
+            -----BEGIN PUBLIC KEY-----
+            MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA87zXDd9JnkGyDd4iA/nZ
+            J5iT4k91e07IsTt5OxOoBtY821XNu/XWVSkGiekZkwwRSluq19Yf2/xMN4JOwfvX
+            pB2FXVXVQMOddU71nBIRXSDgXVyWgv9irEBEhF+diVFqGwiUYN5KKTVJyvyU7hrG
+            WP5A62rA+8xpg5b9drCtsu2UyfogXkV28stjTwj3gABEr1vjk9qGpQWkHCyJAoq2
+            Xxbg7Iy+jhqiJQ76ivGWubV8TTETTnw6HG7IvNopHWkqJr6EzU2HNgjXH7tPEfoF
+            vdv3OPqj3AINWYeuf8pujEVT7PYd+D562MfjTYOp5OMjxbdC7TmrrgtCQ6LPRRZc
+            /wIQQ8T4eA8zbeajhUAXSan74RSUHghFvAZz7isua1LtfB7Br2Bm7Bjb18YD8C2D
+            HZRKYvt9VrPvnc6GcfF/YTsSGlr/NllXEbxHHKrOx/KVzE5KJ4jbav7RdrmffZ96
+            Yd6yZCyo8ZevMBWwcZdEme2G+wNth8qZRaemsXpnmjHS0gwxA71yr3a/ovp9Kh8r
+            J8ROSW/jeN2+qwa8sTfz8aiJWCgJ/nGafiUI1sj00LCXUHwUwkApaJakZVBH8VaL
+            PiZAvx7LWJaYcnrWIxyaWpYomIv2s/YNVO//Qd1zgCJA4FB6uSnjodeseZgXZfwM
+            G08hvSNTIFfqt9ba3QTJHGcCAwEAAQ==
+            -----END PUBLIC KEY-----
