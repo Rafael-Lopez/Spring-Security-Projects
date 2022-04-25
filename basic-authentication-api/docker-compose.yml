@@ -11,4 +11,14 @@ services:
     ports:
       - '8089:8080'
     volumes:
-      - ./keycloak/imports:/opt/jboss/keycloak/imports
+      - ./src/main/docker/keycloak/imports:/opt/jboss/keycloak/imports
+  basic-auth-app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    ports:
+      - '8080:8080'
+    depends_on:
+      - keycloak
